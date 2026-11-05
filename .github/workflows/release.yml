@@ -1,0 +1,10 @@
+name: NSS Release
+on:
+  push:
+    tags:
+      - 'NSS_*_RTM'
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "release ok"
